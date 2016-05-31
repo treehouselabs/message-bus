@@ -36,9 +36,9 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 - [Marco Janssen][link-marco]
 - [All Contributors][link-contributors]
 
-[ico-travis]: https://img.shields.io/travis/treehouselabs/queue/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/treehouselabs/message-bus/master.svg?style=flat-square
 
-[link-travis]: https://travis-ci.org/treehouselabs/queue
+[link-travis]: https://travis-ci.org/treehouselabs/message-bus
 [link-mark]: https://github.com/mvanduijker
 [link-jeroen]: https://github.com/fieg
 [link-marco]: https://github.com/marcojanssen
