@@ -1,0 +1,28 @@
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+
+env:
+  - PREFER_LOWEST="--prefer-lowest"
+  - PREFER_LOWEST=""
+
+language: php
+php:
+  - 5.5
+  - 5.6
+  - 7.0
+  - hhvm
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: hhvm
+
+before_script:
+  - travis_retry composer self-update
+  - travis_retry composer update --no-interaction --prefer-source "$PREFER_LOWEST"
+
+script:
+  - ./vendor/bin/phpunit --coverage-text

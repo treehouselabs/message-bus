@@ -1,0 +1,36 @@
+{
+    "name": "treehouselabs/message-bus",
+    "type": "library",
+    "description": "MessageBus",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark van Duijker",
+            "email": "mark@treehouse.nl"
+        },
+        {
+            "name": "Jeroen Fiege",
+            "email": "jeroen@treehouse.nl"
+        },
+        {
+            "name": "Marco Janssen",
+            "email": "marco@treehouse.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "TreeHouse\\MessageBus\\": "src/TreeHouse/MessageBus/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\TreeHouse\\MessageBus\\": "tests/TreeHouse/MessageBus/"
+        }
+    }
+}
