@@ -48,7 +48,7 @@ class SubscriberResolver implements SubscriberResolverInterface
     public function resolve($message)
     {
         $messageName = $this->messageNameResolver->resolve(
-            $message->getEvent()
+            $message
         );
 
         if (isset($this->mapping[$messageName])) {
